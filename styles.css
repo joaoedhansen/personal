@@ -1,0 +1,98 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+html {
+    background-color: #f5f5f5;
+    margin: 0; /* Espaçamento entre os campos de entrada */
+    padding: 0;
+}
+
+/* Começo login de usuário */
+.containerLogin {
+    display: flex; /* Flexbox para o layout */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    height: 100vh; /* Faz o contêiner ter a altura da tela inteira */
+    overflow: auto; /* Permite rolagem caso o conteúdo ultrapasse o tamanho */
+}
+
+.boxLogin {
+    display: flex; /* Flexbox para o layout */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    padding: 50px; /* Espaçamento ao redor do conteúdo */
+    border-radius: 15px; /* Cantos arredondados */
+    background-color: white;
+    box-shadow: 0 7px 15px black; /* Adiciona uma sombra sutil */
+    width: 100%; /* Faz os campos de entrada ocuparem toda a largura */
+    max-width: 255px; /* Limita a largura máxima */
+}
+
+.inputLogin {
+    width: 100%; /* Faz os campos de entrada ocuparem toda a largura */
+    margin: 15px; /* Espaçamento entre os campos de entrada */
+    padding: 14px; /* Espaçamento ao redor do conteúdo */
+    border: 1px solid black; /* Adiciona uma borda preta */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+.formLogin {
+    display: flex; /* Flexbox para o layout */
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+}
+
+#btnLogin {
+    width: 50%; /* Faz os campos de entrada ocuparem toda a largura */
+    margin: 25px auto; /* Centraliza o botão horizontalmente */
+    padding: 10px; /* Espaçamento ao redor do conteúdo */
+    text-align: center;
+    border: 1px solid black; /* Adiciona uma borda preta */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+.esqueceuSenha {
+    display: flex; /* Flexbox para o layout */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+}
+
+.esqueceuSenhaLogin {
+    margin-left: 7px;
+    color: #0000FF;
+}
+
+#btnLogin:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+    outline: 1px solid black;
+}
+
+.esqueceuSenhaLogin:hover {
+    cursor: pointer;
+    text-decoration: underline; /* Sublinha o link no hover */
+}
+
+@media screen and (max-width: 600px) {
+    .boxLogin {
+        padding: 20px /* Espaçamento ao redor do conteúdo */
+    }
+}
+
+@media screen and (max-height: 320px) {
+    .boxLogin {
+        padding: 15px; /* Espaçamento ao redor do conteúdo */
+    }
+    .inputLogin {
+        margin: 5px; /* Espaçamento entre os campos de entrada */
+        padding: 5px; /* Espaçamento ao redor do conteúdo */
+    }
+    #btnLogin {
+        margin: 10px auto; 
+        padding: 4px; /* Espaçamento ao redor do conteúdo */
+    }
+}
+/* Final login de usuário */
