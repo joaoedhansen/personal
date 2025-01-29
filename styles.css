@@ -9,6 +9,10 @@ html {
     padding: 0;
 }
 
+.paginaLogin {
+    background-color: #0D1117;
+}
+
 /* Começo login de usuário */
 .containerLogin {
     display: flex; /* Flexbox para o layout */
@@ -25,18 +29,26 @@ html {
     flex-direction: column; /* Organiza os elementos verticalmente */
     padding: 50px; /* Espaçamento ao redor do conteúdo */
     border-radius: 15px; /* Cantos arredondados */
-    background-color: white;
-    box-shadow: 0 7px 15px black; /* Adiciona uma sombra sutil */
+    background-color: #212830;
+    box-shadow: 0 0 3px #fff; /* Adiciona uma sombra sutil */
     width: 100%; /* Faz os campos de entrada ocuparem toda a largura */
     max-width: 255px; /* Limita a largura máxima */
+}
+
+.tituloLogin {
+    color: #fff;
 }
 
 .inputLogin {
     width: 100%; /* Faz os campos de entrada ocuparem toda a largura */
     margin: 15px; /* Espaçamento entre os campos de entrada */
-    padding: 14px; /* Espaçamento ao redor do conteúdo */
+    padding: 10px; /* Espaçamento ao redor do conteúdo */
     border: 1px solid black; /* Adiciona uma borda preta */
-    border-radius: 5px; /* Cantos arredondados */
+    border-radius: 10px; /* Cantos arredondados */
+    background-color: #0D1117;
+    box-shadow: 0 0 2px #fff;
+    color: #fff;
+    outline: 1px solid #fff;
 }
 
 .formLogin {
@@ -52,6 +64,9 @@ html {
     text-align: center;
     border: 1px solid black; /* Adiciona uma borda preta */
     border-radius: 5px; /* Cantos arredondados */
+    background-color: #238636;
+    color: #fff;
+    box-shadow: 0px 0px 2px #fff;
 }
 
 .esqueceuSenha {
@@ -59,16 +74,19 @@ html {
     align-items: center; /* Centraliza verticalmente o conteúdo */
 }
 
+.textoEsqueceuSenhaLogin {
+    color: #fff
+}
+
 .esqueceuSenhaLogin {
     margin-left: 7px;
-    color: #0000FF;
+    color: #4493F8;
 }
 
 #btnLogin:hover {
     cursor: pointer;
-    background-color: #fff;
-    color: black;
-    outline: 1px solid black;
+    color: #fff;
+    outline: 1px solid #fff;
 }
 
 .esqueceuSenhaLogin:hover {
@@ -96,3 +114,91 @@ html {
     }
 }
 /* Final login de usuário */
+
+/* Começo recuperar senha */
+.paginaRecuperarSenha {
+    background-color: #0D1117;
+}
+
+.containerRecuperarSenha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: auto;
+}
+
+.boxRecuperarSenha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    min-width: 255px;
+    background-color: #212830;
+    box-shadow: 0 0 3px #fff;
+    border-radius: 15px;
+}
+
+.formRecuperarSenha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloRecuperarSenha {
+    text-align: left;
+    display: block;
+    color: #fff
+}
+
+.textoEmailRecuperarSenha {
+    display: block;
+    text-align: left;
+    color: #fff;
+    font-size: 15px;;
+}
+
+.inputRecuperarSenha {
+    width: 300px;
+    margin: 15px;
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: #212830;
+    color: #fff;
+    box-shadow: 0 0 2px #fff;
+    outline: 1px solid #fff;
+    margin: 8px;
+}
+
+#btnRecuperarSenha {
+    padding: 7px;
+    margin: 15px auto;
+    border-radius: 5px;
+    border: solid 1px black;
+    box-shadow: 0 0 2px #fff;
+    background-color: #238636;
+    color: #fff;
+    width: 40%;
+}
+
+.voltarLogin {
+    display: flex;
+    align-items: center;
+}
+
+.textoVoltarLogin {
+    color:#fff
+}
+
+.voltarLoginLink {
+    margin-left: 6px;
+    color: #4493F8;
+}
+
+#btnRecuperarSenha:hover {
+    cursor: pointer;
+    color: #fff;
+    outline: 1px solid #fff;
+}
