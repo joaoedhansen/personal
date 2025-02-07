@@ -1,34 +1,36 @@
 <!DOCTYPE html>
-<html class="paginaLogin" lang="en">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login-styles.css">
     <title>Login</title>
 </head>
 
-<body class="paginaLogin">
-    <style></style>
-    <div class="containerLogin">
-        <div class="boxLogin">
+<body>
+    <div class="container">
+        <div class="box">
 
-            <h1 class="tituloLogin">Login</h1>
+            <h2 class="titulo-logar">Login</h2>
 
-            <form class="formLogin">
+            <form class="form-login">
 
-                <input class="inputLogin" type="usuario" placeholder="Usuário:" id="usuarioLogin" autofocus>
+                <input class="input-usuario" type="text" placeholder="Usuário:" id="usuarioLogin" autofocus>
 
-                <input class="inputLogin" type="password" placeholder="Senha:" id="senhaLogin">
+                <input class="input-senha" type="password" placeholder="Senha:" id="senhaLogin">
+                
+                <label>
+                <input class="input-salvar" type="checkbox"> Lembrar-me
+                </label>
 
                 <button id="btnLogin" type="button">Entrar</button>
 
             </form>
 
-            <div class="esqueceuSenha">
-                <p class="textoEsqueceuSenhaLogin">Esqueceu a senha?</p>
-                <a class="esqueceuSenhaLogin" href="recuperarSenha.html">Clique aqui.</a>
-            </div>
+            <a class="esqueceu-senha" href="recuperar-senha.html">Esqueci minha senha</a>
+
         </div>
     </div>
 </body>
